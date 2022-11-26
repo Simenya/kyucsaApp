@@ -11,7 +11,7 @@ class SplashScreen : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
 
-
+        setContentView(R.layout.activity_main)
 
         Handler().postDelayed({
             startActivity(Intent(this,WebActivity::class.java))
