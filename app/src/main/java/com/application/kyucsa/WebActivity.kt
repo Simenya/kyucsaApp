@@ -12,7 +12,9 @@ class WebActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_web)
-        webView=findViewById(R.id.web)
+
+        //Setting up the URL link
+        webView = findViewById(R.id.web)
         webView.apply {
             webViewClient= WebViewClient()
             loadUrl(URL)
