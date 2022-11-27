@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "432306257398",
+    "project_id": "kyucsaappusers",
+    "storage_bucket": "kyucsaappusers.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:432306257398:android:156cbe1fcb2dc2a8289bd7",
+        "android_client_info": {
+          "package_name": "com.application.kyucsa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "432306257398-gq25avafte4f9sgkol95cjj91k4ojckf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6MDJWa4KEqbNBe5bqKN8TCvYp9cyx9nM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "432306257398-gq25avafte4f9sgkol95cjj91k4ojckf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

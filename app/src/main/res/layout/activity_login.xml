@@ -65,7 +65,7 @@
             android:layout_marginTop="10dp"
             android:fontFamily="@font/aladin"
             android:text="@string/login_title"
-            android:textColor="@color/teal_200"
+            android:textColor="@color/dark_red"
             android:textSize="20sp" />
 
         <LinearLayout
@@ -107,6 +107,7 @@
         android:layout_height="wrap_content"
         android:padding="50dp"
         app:cardCornerRadius="16dp"
+        android:background="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -177,6 +178,7 @@
         android:textAllCaps="false"
         android:fontFamily="@font/arimo"
         android:background="@drawable/btn_bg"
+        android:backgroundTint="@color/dark_red"
         app:layout_constraintBottom_toBottomOf="@+id/cardView"
         app:layout_constraintEnd_toEndOf="@+id/cardView"
         app:layout_constraintStart_toStartOf="@+id/cardView"

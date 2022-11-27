@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
-    tools:context=".LogoutActivity">
+    android:background="@color/white">
 
     <LinearLayout
         android:layout_width="300dp"
@@ -18,7 +17,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="45dp"
-            android:background="@color/purple_700">
+            android:background="@color/dark_red">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -58,7 +57,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/cancel"
-                    android:textColor="@color/purple_700"
+                    android:textColor="@color/dark_red"
                     android:textSize="18sp"
                     android:fontFamily="@font/arimo"
                     android:paddingEnd="20dp"
@@ -69,7 +68,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/logout"
                     android:fontFamily="@font/arimo"
-                    android:textColor="@color/purple_700"
+                    android:textColor="@color/dark_red"
                     android:textSize="18sp"/>
             </LinearLayout>
 
