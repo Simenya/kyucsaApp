@@ -1,9 +1,15 @@
 package com.application.kyucsa
 
+import android.app.Dialog
+import android.content.Context
 import android.content.Intent
+import android.graphics.Color
+import android.graphics.drawable.ColorDrawable
+import android.net.ConnectivityManager
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.WindowManager
+import android.widget.Button
 import com.application.kyucsa.databinding.ActivityLandingBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
@@ -18,6 +24,9 @@ class LandingActivity : AppCompatActivity() {
         binding = ActivityLandingBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
+
+
+        checkInternetConnection(this)
 
         // removing the screen's tools bar and enabling fullscreen mode
         window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN)
@@ -42,5 +51,40 @@ class LandingActivity : AppCompatActivity() {
             finish()
         }
         super.onStart()
+    }
+
+    fun checkInternetConnection(context: Context) {
+
+        val manager = applicationContext.getSystemService(
+            Context.CONNECTIVITY_SERVICE
+        ) as ConnectivityManager
+
+        val networkIfo = manager.activeNetworkInfo
+
+        if (null == networkIfo) {
+
+            val dialog = Dialog(context)
+
+            dialog.setContentView(R.layout.alert_internet_dialog)
+
+            dialog.setCanceledOnTouchOutside(false)
+
+            dialog.window!!.setLayout(
+                WindowManager.LayoutParams.MATCH_PARENT,
+                WindowManager.LayoutParams.MATCH_PARENT
+            )
+            dialog.window!!.setBackgroundDrawable(
+                ColorDrawable(
+                    Color.GREEN
+                )
+            )
+
+            dialog.findViewById<Button>(R.id.btn_try_again)
+                .setOnClickListener {
+                    recreate()
+                }
+
+            dialog.show()
+        }
     }
 }

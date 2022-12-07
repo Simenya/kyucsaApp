@@ -6,11 +6,11 @@ import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import android.net.ConnectivityManager
 import android.view.WindowManager
-import android.widget.Button
+import androidx.appcompat.app.AppCompatActivity
 
-class InternetConnectionCheck {
-    
-    fun checkInternetConnection() {
+class InternetConnectionCheck : AppCompatActivity() {
+
+    fun checkInternetConnection(context: Context) {
 
         val manager = applicationContext.getSystemService(
             Context.CONNECTIVITY_SERVICE
@@ -20,7 +20,7 @@ class InternetConnectionCheck {
 
         if (null == networkIfo) {
 
-            val dialog = Dialog(co)
+            val dialog = Dialog(context)
 
             dialog.setContentView(R.layout.alert_internet_dialog)
 
@@ -36,10 +36,10 @@ class InternetConnectionCheck {
                 )
             )
 
-            dialog.findViewById<Button>(R.id.btn_try_again)
-                .setOnClickListener {
-                    recreate()
-                }
+//            dialog.findViewById<Button>(R.id.btn_try_again)
+//                .setOnClickListener {
+//                    recreate()
+//                }
 
             dialog.show()
         }
