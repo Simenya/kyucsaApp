@@ -3,6 +3,7 @@ package com.application.kyucsa
 
 import android.app.Dialog
 import android.content.Context
+import android.content.Intent
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import android.net.ConnectivityManager
@@ -77,7 +78,7 @@ class WebActivity : AppCompatActivity()
 
         dialog.setContentView(R.layout.logout_alert_dialog)
 
-        dialog.setCanceledOnTouchOutside(true)
+        dialog.setCanceledOnTouchOutside(false)
 
         dialog.window!!.setLayout(
             WindowManager.LayoutParams.MATCH_PARENT,
@@ -94,6 +95,7 @@ class WebActivity : AppCompatActivity()
                 Firebase.auth.signOut()
                 finish()
                 Toast.makeText(this,"Signed Out Successfully", Toast.LENGTH_LONG).show()
+                startActivity(Intent(this, LandingActivity::class.java))
             }
         dialog.findViewById<Button>(R.id.cancelLogoutBtnId)
             .setOnClickListener {
@@ -109,7 +111,7 @@ class WebActivity : AppCompatActivity()
 
         dialog.setContentView(R.layout.about_dialog)
 
-        dialog.setCanceledOnTouchOutside(true)
+        dialog.setCanceledOnTouchOutside(false)
 
         dialog.window!!.setLayout(
             WindowManager.LayoutParams.WRAP_CONTENT,

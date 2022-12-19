@@ -11,8 +11,8 @@
         android:id="@+id/view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:alpha=".65"
-        android:background="@color/black"
+        android:alpha=".50"
+        android:background="@color/text_grey"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -61,16 +61,6 @@
         app:layout_constraintTop_toBottomOf="@+id/head"
         app:layout_constraintVertical_bias="0.0">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:fontFamily="@font/arimo"
-            android:text="@string/welcome_text"
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="16sp"
-            android:textStyle="bold" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -80,7 +70,7 @@
             android:fontFamily="@font/aladin"
             android:padding="10dp"
             android:text="@string/welcome_text"
-            android:textColor="@color/dark_red"
+            android:textColor="@color/white"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -93,6 +83,7 @@
             android:fontFamily="@font/arimo"
             android:text="@string/welcome_text2"
             android:textAlignment="center"
+            android:shadowColor="@color/black"
             android:textColor="@color/dark_red"
             android:textSize="14sp"
             android:textStyle="bold" />
@@ -102,22 +93,22 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginBottom="10sp"
-            android:fontFamily="@font/arimo"
+            android:fontFamily="@font/aladin"
             android:text="@string/welcome_text3"
             android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="11sp" />
+            android:textColor="@color/white"
+            android:textSize="17sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginBottom="10sp"
-            android:fontFamily="@font/arimo"
+            android:fontFamily="@font/aladin"
             android:text="@string/welcome_sports"
             android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="11sp" />
+            android:textColor="@color/white"
+            android:textSize="14sp" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -127,7 +118,7 @@
             android:fontFamily="@font/arimo"
             android:text="@string/welcome_text5"
             android:textAlignment="center"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="11sp" />
 
         <TextView
@@ -138,7 +129,7 @@
             android:fontFamily="@font/arimo"
             android:text="@string/auth_to_continue"
             android:textAlignment="center"
-            android:textColor="@color/dark_red"
+            android:textColor="@color/white"
             android:textSize="12sp"
             android:textStyle="bold|italic" />
 
@@ -155,7 +146,7 @@
                 android:layout_height="35dp"
                 android:layout_marginEnd="10dp"
                 android:background="@drawable/btn_bg"
-                android:backgroundTint="@color/teal_200"
+                android:backgroundTint="#1359A8"
                 android:fontFamily="@font/arimo"
                 android:text="@string/login_btn_welcome"
                 android:textAllCaps="false"
@@ -169,7 +160,7 @@
                 android:layout_width="72dp"
                 android:layout_height="35dp"
                 android:background="@drawable/btn_bg"
-                android:backgroundTint="@color/dark_red"
+                android:backgroundTint="#D15705"
                 android:fontFamily="@font/arimo"
                 android:text="@string/register_btn_welcome"
                 android:textAllCaps="false"
@@ -186,6 +177,7 @@
         android:layout_height="wrap_content"
         android:text="Courtesy of Okuro &amp; Simenya"
         android:textSize="10sp"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/view"
         app:layout_constraintStart_toStartOf="parent"
@@ -197,7 +189,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="&#169; 2022 | All Rights Reserved"
-        android:textColor="@color/text_grey"
+        android:textColor="@color/teal_200"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
